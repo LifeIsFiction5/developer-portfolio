@@ -15,13 +15,15 @@ public class ProjectsController {
     public List<Project> getProjects() {
         return List.of(
                 new Project(
-                        "MusemMatch",
+                        "1",
+                        "MuseMatch",
                         "Tinder-style app that matches users with artwork based on their art preferences.",
                         "React, Spring Boot, MySQL, Chicago Art Institute API",
                         "https:///github.com/LifeIsFiction5/musematch",
                         "https://musematch-demo.netlify.app"
                 ),
                 new Project(
+                        "2",
                         "SquareSpace Analytics Scraper",
                         "Uses Playwright to scrape and return analytics from the last 2 weeks of site activity",
                         "TypeScript, Playwright",

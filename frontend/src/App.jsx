@@ -4,6 +4,7 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import About from "./pages/About";
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/resume" element={<Resume />} />
+                        <Route path="/about" element={<About />} />
                         <Route path="/contact" element={<Contact />} />
                     </Routes>
                 </div>
