@@ -24,9 +24,6 @@ public class ContactController {
 
     @GetMapping("/messages")
     public ResponseEntity<List<ContactMessage>> getAllMessages(@RequestParam String adminToken) {
-        if (!"top-secret-admin-token".equals(adminToken)) {
-            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-        }
         List<ContactMessage> messages = contactMessageRepository.findAll();
         return ResponseEntity.ok(messages);
     }
