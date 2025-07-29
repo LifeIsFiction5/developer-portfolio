@@ -23,7 +23,7 @@ public class ContactController {
     }
 
     @GetMapping("/messages")
-    public ResponseEntity<List<ContactMessage>> getAllMessages(@RequestParam String adminToken) {
+    public ResponseEntity<List<ContactMessage>> getAllMessages() {
         List<ContactMessage> messages = contactMessageRepository.findAll();
         return ResponseEntity.ok(messages);
     }
